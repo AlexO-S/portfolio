@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website">
+    <title>OSENI SALAMI</title>
+    
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="image/Alex 2.png" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!--  HEADER SITE -------------------------------------->
+    <header>
+        <div class="logo"><span>O</span>seni.</div>
+        <ul class="navlist">
+            <li><a href="#home" style="--i:1;">Home</a></li>
+            <li><a href="#about" style="--i:2;">About</a></li>
+            <li><a href="#services" style="--i:3;">Services</a></li>
+            <li><a href="#skills" style="--i:4;">Skills</a></li>
+            <li><a href="#portfolio" style="--i:5;">Portfolio</a></li>
+            <li><a href="#contact" style="--i:6;">Contact</a></li>
+        </ul>
+        
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+    <!--  -->
+
+
+
+    <!-- HOME SECTION -------------------------------------->
+    <section id="home" class="home">
+        <div class="home-content scroll-scale">
+            <h1>Hi! I'm Oseni Salami</h1>
+            <div class="change-text">
+                <h3>And I'm a/an</h3>
+                <h3>
+                    <span class="word">Content&nbsp;Creator</span>
+                    <span class="word">Web&nbsp;Developer</span>
+                    <span class="word">Web&nbsp;Designer</span>
+                    <span class="word">Animator</span>
+                    <span class="word">Graphic&nbsp;Designer</span>
+                    <span class="word">Video/Photo&nbsp;Editor</span>
+                </h3>
+            </div>
+
+            <p>A multifaceted tech enthusiast and digital creative with a passion for storytelling. With a strong foundation in frontend web development, I bring ideas to life through interactive and user-friendly interfaces. My skills in graphic design, animation, photo editing, and video editing further enable me to craft compelling visual narratives. Whether building a website, designing a logo, or editing a video, I am always eager to leverage technology to create innovative and engaging experiences.</p>
+
+            <div class="info-box">
+                <div class="email-info">
+                    <h5>Email :</h5>
+                    <span><a href="mailto:alexoseni.as@gmail.com">alexoseni.as@gmail.com</a></span>
+                </div>
+                <div class="behance-info">
+                    <h5>Behance :</h5>
+                    <span><a href="https://www.behance.net/alexsalami">behance.net/alexsalami</a></span>
+                </div>
+            </div>
+
+
+            <div class="btn-box">
+                <a href="cv_oseni_salami.html" class="btn">Download CV</a>
+
+                <a href="mailto:alexoseni.as@gmail.com" class="btn">Hire Me Now!</a>
+            </div>
+
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/alexo.salami" target="_blank" id="si"><i class='bx bxl-facebook'></i></a>
+        
+                <a href="https://www.instagram.com/alex_oseni" target="_blank" id="si"><i class='bx bxl-instagram'></i></a>
+    
+                <a href="https://www.twitter.com/@Alexoseni" target="_blank" id="si"><i class='bx bxl-twitter'></i></a>
+                
+                <a href="#" target="_blank" id="si"><i class='bx bxl-dribbble'></i></a>
+            </div>
+        </div>
+
+
+        <div class="home-image scroll-scale">
+            <div class="img-box">
+                <img src="image/Alex 1.png" alt="Oseni A. Salami">
+            </div>
+
+            <div class="liquid-shape">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="100%" id="blobSvg">
+                    <path fill="#12f7ff" transform="translate(100 100)">
+                        <animate attributeName="d"
+                            dur="20000ms"
+                            repeatCount="indefinite"
+                            values="
+                            M45.2,-55.4C52.1,-48.2,46.6,-27.7,48.5,-9.7C50.3,8.4,59.5,24,56.6,36C53.6,47.9,38.5,56,21.4,64.9C4.3,73.8,-14.7,83.3,-28.5,78.3C-42.3,73.3,-50.8,53.8,-53.6,36.8C-56.4,19.8,-53.5,5.5,-50.9,-9C-48.4,-23.4,-46.2,-38,-37.8,-45C-29.4,-52,-14.7,-51.4,2.3,-54.1C19.2,-56.8,38.4,-62.7,45.2,-55.4Z;
+
+                            M32.9,-37.9C45.1,-29,59.1,-20.9,63.8,-9.1C68.4,2.7,63.6,18.4,55.4,31.4C47.2,44.4,35.5,54.8,22.5,58C9.4,61.1,-4.9,56.9,-16.8,50.6C-28.7,44.3,-38.2,35.9,-49.8,24.6C-61.3,13.2,-74.9,-1.2,-77.6,-18.5C-80.3,-35.8,-72.1,-56,-57.3,-64.5C-42.6,-73,-21.3,-69.9,-5.5,-63.4C10.3,-56.9,20.7,-46.9,32.9,-37.9Z;
+
+                            M22.7,-27.7C29.3,-21.5,34.4,-14.2,39,-4.5C43.5,5.2,47.4,17.4,44,27.4C40.6,37.5,30,45.4,17.1,52.5C4.2,59.5,-11,65.8,-26.8,64.1C-42.5,62.4,-58.8,52.9,-63.7,39.3C-68.6,25.6,-62.1,7.9,-59.3,-10.9C-56.5,-29.7,-57.5,-49.7,-48.2,-55.4C-38.9,-61.1,-19.5,-52.5,-5.7,-45.7C8,-38.9,16.1,-33.8,22.7,-27.7Z;
+
+                            M50.2,-62.3C61.9,-50,66.2,-31.2,65,-14.9C63.8,1.5,57.3,15.4,51.2,32.9C45.1,50.4,39.4,71.6,28.2,74.1C17.1,76.6,0.4,60.6,-12.8,49.5C-25.9,38.4,-35.6,32.3,-45.9,22.6C-56.1,12.9,-66.9,-0.4,-69.4,-16.7C-71.9,-33.1,-66.1,-52.4,-53.1,-64.6C-40.2,-76.7,-20.1,-81.6,-0.4,-81.1C19.2,-80.6,38.5,-74.7,50.2,-62.3Z;
+
+                            M38.9,-45.1C48.6,-38.2,53.3,-24.2,56.2,-9.7C59.1,4.9,60,20.1,54.4,32.8C48.7,45.6,36.4,55.9,23.3,58.1C10.2,60.4,-3.7,54.4,-20.6,50.8C-37.5,47.2,-57.4,45.9,-62.8,36.3C-68.2,26.8,-59.1,9,-50.8,-3.9C-42.5,-16.7,-34.9,-24.6,-26.5,-31.8C-18.2,-39,-9.1,-45.4,2.8,-48.7C14.6,-52,29.2,-52.1,38.9,-45.1Z;
+
+                            M42.6,-50C54.3,-40.9,62.3,-26.7,62.2,-13.1C62,0.5,53.7,13.3,45.7,25.7C37.8,38,30.1,49.9,19.1,54.9C8.1,60,-6.3,58.3,-22.1,55C-37.9,51.7,-55.1,46.8,-65.7,34.8C-76.3,22.9,-80.2,4,-72.5,-8.1C-64.7,-20.2,-45.3,-25.5,-31.3,-34.2C-17.2,-42.9,-8.6,-55,3.4,-59.1C15.4,-63.1,30.9,-59.2,42.6,-50Z;
+
+                            M36.4,-38C50,-32,65.7,-23.2,70.2,-10.5C74.8,2.2,68.1,18.8,56.7,27.4C45.4,35.9,29.4,36.4,14.3,44C-0.8,51.5,-15.1,66.1,-26.1,65C-37,63.9,-44.7,47.1,-53.2,31.2C-61.8,15.4,-71.2,0.6,-68.9,-12C-66.5,-24.7,-52.4,-35.2,-39,-41.2C-25.5,-47.2,-12.8,-48.8,-0.7,-48C11.4,-47.2,22.8,-44,36.4,-38Z;
+
+                            M45.2,-55.4C52.1,-48.2,46.6,-27.7,48.5,-9.7C50.3,8.4,59.5,24,56.6,36C53.6,47.9,38.5,56,21.4,64.9C4.3,73.8,-14.7,83.3,-28.5,78.3C-42.3,73.3,-50.8,53.8,-53.6,36.8C-56.4,19.8,-53.5,5.5,-50.9,-9C-48.4,-23.4,-46.2,-38,-37.8,-45C-29.4,-52,-14.7,-51.4,2.3,-54.1C19.2,-56.8,38.4,-62.7,45.2,-55.4Z;
+                            "
+                        ></animate>
+                    </path>
+                  </svg>
+            </div>
+
+            <div class="liquid-shape">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="100%" id="blobSvg">
+                    <path fill="#12f7ff" transform="translate(100 100)">
+                        <animate attributeName="d"
+                            dur="20000ms"
+                            repeatCount="indefinite"
+                            values="
+                            M45.2,-55.4C52.1,-48.2,46.6,-27.7,48.5,-9.7C50.3,8.4,59.5,24,56.6,36C53.6,47.9,38.5,56,21.4,64.9C4.3,73.8,-14.7,83.3,-28.5,78.3C-42.3,73.3,-50.8,53.8,-53.6,36.8C-56.4,19.8,-53.5,5.5,-50.9,-9C-48.4,-23.4,-46.2,-38,-37.8,-45C-29.4,-52,-14.7,-51.4,2.3,-54.1C19.2,-56.8,38.4,-62.7,45.2,-55.4Z;
+
+                            M32.9,-37.9C45.1,-29,59.1,-20.9,63.8,-9.1C68.4,2.7,63.6,18.4,55.4,31.4C47.2,44.4,35.5,54.8,22.5,58C9.4,61.1,-4.9,56.9,-16.8,50.6C-28.7,44.3,-38.2,35.9,-49.8,24.6C-61.3,13.2,-74.9,-1.2,-77.6,-18.5C-80.3,-35.8,-72.1,-56,-57.3,-64.5C-42.6,-73,-21.3,-69.9,-5.5,-63.4C10.3,-56.9,20.7,-46.9,32.9,-37.9Z;
+
+                            M22.7,-27.7C29.3,-21.5,34.4,-14.2,39,-4.5C43.5,5.2,47.4,17.4,44,27.4C40.6,37.5,30,45.4,17.1,52.5C4.2,59.5,-11,65.8,-26.8,64.1C-42.5,62.4,-58.8,52.9,-63.7,39.3C-68.6,25.6,-62.1,7.9,-59.3,-10.9C-56.5,-29.7,-57.5,-49.7,-48.2,-55.4C-38.9,-61.1,-19.5,-52.5,-5.7,-45.7C8,-38.9,16.1,-33.8,22.7,-27.7Z;
+
+                            M50.2,-62.3C61.9,-50,66.2,-31.2,65,-14.9C63.8,1.5,57.3,15.4,51.2,32.9C45.1,50.4,39.4,71.6,28.2,74.1C17.1,76.6,0.4,60.6,-12.8,49.5C-25.9,38.4,-35.6,32.3,-45.9,22.6C-56.1,12.9,-66.9,-0.4,-69.4,-16.7C-71.9,-33.1,-66.1,-52.4,-53.1,-64.6C-40.2,-76.7,-20.1,-81.6,-0.4,-81.1C19.2,-80.6,38.5,-74.7,50.2,-62.3Z;
+
+                            M38.9,-45.1C48.6,-38.2,53.3,-24.2,56.2,-9.7C59.1,4.9,60,20.1,54.4,32.8C48.7,45.6,36.4,55.9,23.3,58.1C10.2,60.4,-3.7,54.4,-20.6,50.8C-37.5,47.2,-57.4,45.9,-62.8,36.3C-68.2,26.8,-59.1,9,-50.8,-3.9C-42.5,-16.7,-34.9,-24.6,-26.5,-31.8C-18.2,-39,-9.1,-45.4,2.8,-48.7C14.6,-52,29.2,-52.1,38.9,-45.1Z;
+
+                            M42.6,-50C54.3,-40.9,62.3,-26.7,62.2,-13.1C62,0.5,53.7,13.3,45.7,25.7C37.8,38,30.1,49.9,19.1,54.9C8.1,60,-6.3,58.3,-22.1,55C-37.9,51.7,-55.1,46.8,-65.7,34.8C-76.3,22.9,-80.2,4,-72.5,-8.1C-64.7,-20.2,-45.3,-25.5,-31.3,-34.2C-17.2,-42.9,-8.6,-55,3.4,-59.1C15.4,-63.1,30.9,-59.2,42.6,-50Z;
+
+                            M36.4,-38C50,-32,65.7,-23.2,70.2,-10.5C74.8,2.2,68.1,18.8,56.7,27.4C45.4,35.9,29.4,36.4,14.3,44C-0.8,51.5,-15.1,66.1,-26.1,65C-37,63.9,-44.7,47.1,-53.2,31.2C-61.8,15.4,-71.2,0.6,-68.9,-12C-66.5,-24.7,-52.4,-35.2,-39,-41.2C-25.5,-47.2,-12.8,-48.8,-0.7,-48C11.4,-47.2,22.8,-44,36.4,-38Z;
+
+                            M45.2,-55.4C52.1,-48.2,46.6,-27.7,48.5,-9.7C50.3,8.4,59.5,24,56.6,36C53.6,47.9,38.5,56,21.4,64.9C4.3,73.8,-14.7,83.3,-28.5,78.3C-42.3,73.3,-50.8,53.8,-53.6,36.8C-56.4,19.8,-53.5,5.5,-50.9,-9C-48.4,-23.4,-46.2,-38,-37.8,-45C-29.4,-52,-14.7,-51.4,2.3,-54.1C19.2,-56.8,38.4,-62.7,45.2,-55.4Z;
+                            "
+                        ></animate>
+                    </path>
+                  </svg>
+            </div>
+
+            <div class="liquid-shape">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="100%" id="blobSvg">
+                    <path fill="#12f7ff" transform="translate(100 100)">
+                        <animate attributeName="d"
+                            dur="20000ms"
+                            repeatCount="indefinite"
+                            values="
+                            M45.2,-55.4C52.1,-48.2,46.6,-27.7,48.5,-9.7C50.3,8.4,59.5,24,56.6,36C53.6,47.9,38.5,56,21.4,64.9C4.3,73.8,-14.7,83.3,-28.5,78.3C-42.3,73.3,-50.8,53.8,-53.6,36.8C-56.4,19.8,-53.5,5.5,-50.9,-9C-48.4,-23.4,-46.2,-38,-37.8,-45C-29.4,-52,-14.7,-51.4,2.3,-54.1C19.2,-56.8,38.4,-62.7,45.2,-55.4Z;
+
+                            M32.9,-37.9C45.1,-29,59.1,-20.9,63.8,-9.1C68.4,2.7,63.6,18.4,55.4,31.4C47.2,44.4,35.5,54.8,22.5,58C9.4,61.1,-4.9,56.9,-16.8,50.6C-28.7,44.3,-38.2,35.9,-49.8,24.6C-61.3,13.2,-74.9,-1.2,-77.6,-18.5C-80.3,-35.8,-72.1,-56,-57.3,-64.5C-42.6,-73,-21.3,-69.9,-5.5,-63.4C10.3,-56.9,20.7,-46.9,32.9,-37.9Z;
+
+                            M22.7,-27.7C29.3,-21.5,34.4,-14.2,39,-4.5C43.5,5.2,47.4,17.4,44,27.4C40.6,37.5,30,45.4,17.1,52.5C4.2,59.5,-11,65.8,-26.8,64.1C-42.5,62.4,-58.8,52.9,-63.7,39.3C-68.6,25.6,-62.1,7.9,-59.3,-10.9C-56.5,-29.7,-57.5,-49.7,-48.2,-55.4C-38.9,-61.1,-19.5,-52.5,-5.7,-45.7C8,-38.9,16.1,-33.8,22.7,-27.7Z;
+
+                            M50.2,-62.3C61.9,-50,66.2,-31.2,65,-14.9C63.8,1.5,57.3,15.4,51.2,32.9C45.1,50.4,39.4,71.6,28.2,74.1C17.1,76.6,0.4,60.6,-12.8,49.5C-25.9,38.4,-35.6,32.3,-45.9,22.6C-56.1,12.9,-66.9,-0.4,-69.4,-16.7C-71.9,-33.1,-66.1,-52.4,-53.1,-64.6C-40.2,-76.7,-20.1,-81.6,-0.4,-81.1C19.2,-80.6,38.5,-74.7,50.2,-62.3Z;
+
+                            M38.9,-45.1C48.6,-38.2,53.3,-24.2,56.2,-9.7C59.1,4.9,60,20.1,54.4,32.8C48.7,45.6,36.4,55.9,23.3,58.1C10.2,60.4,-3.7,54.4,-20.6,50.8C-37.5,47.2,-57.4,45.9,-62.8,36.3C-68.2,26.8,-59.1,9,-50.8,-3.9C-42.5,-16.7,-34.9,-24.6,-26.5,-31.8C-18.2,-39,-9.1,-45.4,2.8,-48.7C14.6,-52,29.2,-52.1,38.9,-45.1Z;
+
+                            M42.6,-50C54.3,-40.9,62.3,-26.7,62.2,-13.1C62,0.5,53.7,13.3,45.7,25.7C37.8,38,30.1,49.9,19.1,54.9C8.1,60,-6.3,58.3,-22.1,55C-37.9,51.7,-55.1,46.8,-65.7,34.8C-76.3,22.9,-80.2,4,-72.5,-8.1C-64.7,-20.2,-45.3,-25.5,-31.3,-34.2C-17.2,-42.9,-8.6,-55,3.4,-59.1C15.4,-63.1,30.9,-59.2,42.6,-50Z;
+
+                            M36.4,-38C50,-32,65.7,-23.2,70.2,-10.5C74.8,2.2,68.1,18.8,56.7,27.4C45.4,35.9,29.4,36.4,14.3,44C-0.8,51.5,-15.1,66.1,-26.1,65C-37,63.9,-44.7,47.1,-53.2,31.2C-61.8,15.4,-71.2,0.6,-68.9,-12C-66.5,-24.7,-52.4,-35.2,-39,-41.2C-25.5,-47.2,-12.8,-48.8,-0.7,-48C11.4,-47.2,22.8,-44,36.4,-38Z;
+
+                            M45.2,-55.4C52.1,-48.2,46.6,-27.7,48.5,-9.7C50.3,8.4,59.5,24,56.6,36C53.6,47.9,38.5,56,21.4,64.9C4.3,73.8,-14.7,83.3,-28.5,78.3C-42.3,73.3,-50.8,53.8,-53.6,36.8C-56.4,19.8,-53.5,5.5,-50.9,-9C-48.4,-23.4,-46.2,-38,-37.8,-45C-29.4,-52,-14.7,-51.4,2.3,-54.1C19.2,-56.8,38.4,-62.7,45.2,-55.4Z;
+                            "
+                        ></animate>
+                    </path>
+                  </svg>
+            </div>
+        </div>
+    </section>
+    <!--  ------------------------------------------------->
+
+
+
+    <!-- ABOUT SECTION ------------------------------------->
+    <section id="about" class="about">
+        <div class="img-about scroll-scale">
+            <img src="image/Alex 2.png" alt="Oseni A. Salami">
+
+            <div class="info-about1">
+                <span>5+</span>
+                <p>Years of Experience</p>
+            </div>
+
+            <div class="info-about2">
+                <span>40+</span>
+                <p>Project Complete</p>
+            </div>
+
+            <div class="info-about3">
+                <span>20+</span>
+                <p>Happy<br>Clients</p>
+            </div>
+        </div>
+
+        <div class="about-content scroll-scale">
+            <span>Let me Introduce myself</span>
+            <h2>About Me</h2>
+            <h3>A story of good</h3>
+            <p>A passionate and dedicated web developer with experience in HTML, CSS, Bootstrap, and JavaScript; I have created several websites ranging from single to double-page formats. I am a technology enthusiast, a seasoned team player, an educator, an administrator, and a researcher with a strong desire to elevate any organization I am part of.</p>
+
+            <div class="btn-box">
+                <a href="aboutme_oseni_salami.html" class="btn">Read More!  <i class="fa-solid fa-angles-right fa-fade" style="color: var(--bg-color-);"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <!--  -------------------------------------------------->
+
+
+
+    <!-- SERVICES SECTION ----------------------------------->
+    <section id="services" class="services">
+        <div class="main-text scroll-scale">
+            <span>What I will do for you</span>
+            <h2>My Services</h2>
+        </div>
+
+        <div class="section-services scroll-bottom">
+            <div class="service-box">
+                <i class='bx bxs-layer service-icon'></i>
+                <h3>Graphic Design</h3>
+                <p>My creativity is driven by market and consumer insights, producing designs that works; conveying messages, ideas, and capturing...</p>
+                <div class="btn-box service-btn">
+                    <a href="graphic_design_by_oseni_salami.html"  class="btn">Read More   <i class="fa-solid fa-angles-right fa-fade" style="color: var(--bg-color-);"></i></a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bx-code-alt service-icon' ></i>
+                <h3>Web Development</h3>
+                <p>I professionally create and maintain a reputable online presence for my clients whether individuals, businesses, and organizations...</p>
+                <div class="btn-box service-btn">
+                    <a href="web_development_by_oseni_salami.html"  class="btn">Read More  <i class="fa-solid fa-angles-right fa-fade" style="color: var(--bg-color-);"></i></a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bx-desktop service-icon' ></i>
+                <h3>Web Design</h3>
+                <p>My Comprehensive Web Design Solutions provide a full-service approach to creating visually stunning, user-friendly, and highly functional...</p>
+                <div class="btn-box service-btn">
+                    <a href="web_design_by_oseni_salami.html"  class="btn">Read More  <i class="fa-solid fa-angles-right fa-fade" style="color: var(--bg-color-);"></i></a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxs-magic-wand service-icon' ></i>
+                <h3>Photo Editing</h3>
+                <p>My photo editing services aim to transform your raw images into stunning visual content, with high-quality editing; meeting your expectation...</p>
+                <div class="btn-box service-btn">
+                    <a href="photo_editing_by_oseni_salami.html"  class="btn">Read More  <i class="fa-solid fa-angles-right fa-fade" style="color: var(--bg-color-);"></i></a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxs-crop service-icon' ></i>
+                <h3>Video Editing</h3>
+                <p>My Professional Video Editing Solutions offer comprehensive editing services that transform raw footage into polished, engaging videos...</p>
+                <div class="btn-box service-btn">
+                    <a href="video_editing_by_oseni_salami.html"  class="btn">Read More  <i class="fa-solid fa-angles-right fa-fade" style="color: var(--bg-color-);"></i></a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxs-pen service-icon'></i>
+                <h3>Animation</h3>
+                <p>I combine my artistic talent, technical skills, and attention to detail to bring stories and ideas to life through motion and animation...</p>
+                <div class="btn-box service-btn">
+                    <a href="animation_by_oseni_salami.html"  class="btn">Read More  <i class="fa-solid fa-angles-right fa-fade" style="color: var(--bg-color-);"></i></a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxs-megaphone service-icon'></i>
+                <h3>Advertising</h3>
+                <p>My advertising services help businesses and organizations reach their target audience, build brand awareness, and drive sales...</p>
+                <div class="btn-box service-btn">
+                    <a href="advertising_by_oseni_salami.html"  class="btn">Read More  <i class="fa-solid fa-angles-right fa-fade" style="color: var(--bg-color-);"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--  -------------------------------------------------->
+
+
+
+    <!-- SKILLS SECTION ----------------------------------->
+    <section id="skills" class="skills">
+        <div class="main-text scroll-scale">
+            <span>technical and professional</span>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skill-main">
+            <div class="skill-left scroll-scale">
+                <h3>Technical Skills</h3>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>&#10003;</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+ 
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Figma</p>
+                        <p>&#10003;</p>
+                    </div>
+                    <div class="bar">
+                        <span class="figma"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <p>&#10003;</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>&#10003;</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Bootstrap</p>
+                        <p>&#10003;</p>
+                    </div>
+                    <div class="bar">
+                        <span class="bootstrap"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>WordPress</p>
+                        <p>&#10003;</p>
+                    </div>
+                    <div class="bar">
+                        <span class="wordpress"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Photoshop</p>
+                        <p>&#10003;</p>
+                    </div>
+                    <div class="bar">
+                        <span class="photoshop"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skill-right scroll-scale">
+                <h3>Professional skills</h3>
+                <div class="professional">
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="100"></div>
+
+                        <div class="text">
+                            <big>&#10003;</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="100"></div>
+
+                        <div class="text">
+                            <big>&#10003;</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="100"></div>
+
+                        <div class="text">
+                            <big>&#10003;</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="100"></div>
+
+                        <div class="text">
+                            <big>&#10003;</big>
+                            <small>Communication</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="100"></div>
+
+                        <div class="text">
+                            <big>&#10003;</big>
+                            <small>Time Management</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="100"></div>
+
+                        <div class="text">
+                            <big>&#10003;</big>
+                            <small>Problem-Solving</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="100"></div>
+
+                        <div class="text">
+                            <big>&#10003;</big>
+                            <small>Leadership</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="100"></div>
+
+                        <div class="text">
+                            <big>&#10003;</big>
+                            <small>Work Ethic</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--  -------------------------------------------------->
+
+
+
+
+     <!-- PORTFOLIO SECTION --------------------------------->
+    <section id="portfolio" class="portfolio">
+        <div class="main-text scroll-scale">
+            <span>What i will do for you</span>
+            <h2>Latest Project</h2>
+        </div>
+
+        <div class="container">
+            <div class="fillter-buttons scroll-scale">
+                <button class="button" data-filter="all">All</button>
+                <button class="button" data-filter=".product">Product</button>
+                <button class="button" data-filter=".inter">Interacting</button>
+                <button class="button" data-filter=".web">Web App</button>
+            </div>
+
+            <div class="portfolio-gallery scroll-bottom">
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="image2/P8.webp" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Cake</h3>
+
+                        <p>This website is a heaven for cake lovers, featuring a vast collection of mouthwatering cake designs, flavors, and recipes.  Explore and get inspired! </p>
+
+                        <a href="https://alexo-s.github.io/Cake_Shop/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="image2/P1.webp" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Launch</h3>
+                        
+                        <p>The ultimate destination for trailblazers, featuring the latest news, updates and insights from the world of technology. Get ready to launch your dreams!</p>
+
+                        <a href="https://alexo-s.github.io/launch/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix inter">
+                    <div class="port-image">
+                        <img src="image2/P6.webp" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Marketing</h3>
+                        
+                        <p>Your one-stop-shop for innovative strategies, expert insights, and cutting-edge solutions to elevate your brand and drive results.</p>
+
+                        <a href="https://alexo-s.github.io/Marketing/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <!-- <div class="port-box mix inter">
+                    <div class="port-image">
+                        <img src="image2/P7.JPG" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Graphic Design</h3>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum nulla voluptatem fuga quibusdam laudantium, amet unde laboriosam at explicabo!</p>
+
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div> -->
+
+
+
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="image2/P11.webp" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Gallery App</h3>
+                        
+                        <p>The ultimate destination for photography enthusiasts and art lovers alike! Our App showcases a stunning collection of images, from breathtaking landscapes to thought-provoking art pieces. Explore!</p>
+
+                        <a href="https://alexo-s.github.io/Gallery-App"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="image2/P2.webp" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Dictionary</h3>
+                        
+                        <p>Look up, learn, and master words with ease! A fast, free, and feature-rich online dictionary that puts the power of language at your fingertips. Start exploring now!</p>
+
+                        <a href="https://alexo-s.github.io/Dictionary"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="image2/P12.webp" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Random Jokes Generator</h3>
+                        
+                        <p>Laughter is just a click away! Brighten your day, impress your friends, and tickle your funny bone with our endless supply of jokes. Get ready to LOL!</p>
+
+                        <a href="https://alexo-s.github.io/Random-Jokes-Generator"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="image2/P3.webp" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Random Quotes</h3>
+                        
+                        <p>Find inspiration in every click; with timeless words from famous figures, thought leaders, and literary masters. Nourish your mind with our ever-changing collection of quotes. Discover your next favorite phrase today!</p>
+
+                        <a href="https://alexo-s.github.io/Random-Quotes"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="image2/P4.webp" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Digital Clock</h3>
+                        
+                        <p>Time is on your side. Our sleek and intuitive digital time keeps you in sync with the world, 24/7. Accurately track the current time in your region. Whether you're a global traveler or a busy bee, our app helps you make every second count!</p>
+
+                        <a href="https://alexo-s.github.io/digital_clock/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -------------------------------------------------->
+
+
+
+      <!-- CONTACT SECTION ---------------------------------->
+    <section id="contact" class="contact-all">
+        <div class="main-text scroll-scale">
+            <span>Ask me question</span>
+            <h2>Contact Me!</h2>
+        </div>
+
+
+        <div class="contact">
+            
+            <div class="form-and-contactinfo">
+
+                <form action="#" class="scroll-bottom">
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <label for="name" class="label">Full Name</label>
+                            <input type="text"  id="name" class="item" autocomplete="on">
+                            <div class="error-txt">Full-Name can't be blank</div>
+                        </div>
+        
+                        <div class="input-field field">
+                            <label for="email" class="label">Email Address</label>
+                            <input type="email" id="email" class="item" autocomplete="on">
+                            <div class="error-txt email">Email Address can't be blank</div>
+                        </div>
+                    </div>
+        
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <label for="phone" class="label">Phone</label>
+                            <input type="text"  id="phone" class="item" autocomplete="on">
+                            <div class="error-txt">Phone Number can't be blank</div>
+                        </div>
+        
+                        <div class="input-field field">
+                            <label for="subject" class="label">Subject</label>
+                            <input type="text"  id="subject" class="item" autocomplete="on">
+                            <div class="error-txt">Subject can't be blank</div>
+                        </div>
+                    </div>
+        
+                    <div class="textarea-field field">
+                        <label for="message" class="label"> Message</label>
+                        <textarea name="" id="message"  rows="5"  class="item" autocomplete="on"></textarea>
+                        <div class="error-txt">Message can't be blank</div>
+                    </div>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--  -------------------------------------------------->
+
+
+
+    <!-- FOOTER SECTION ---------------------------------->
+    <footer>
+        <div class="logo2"><span>O</span>seni.</div>
+
+        <div id="footer1">
+           <div class="footer1-2">
+                <div class="pages-nav">
+                    <h5 class="pages">PAGES</h5>
+                    <ul class="navlistfooter">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="services">
+                    <h5 class="services">SERVICES</h5>
+                    <ul class="service-link">
+                        <li><a href="graphic_design_by_oseni_salami.html">Graphic Design</a></li>
+                        <li><a href="web_development_by_oseni_salami.html">Web Development</a></li>
+                        <li><a href="web_design_by_oseni_salami.html">Web Design</a></li>
+                        <li><a href="photo_editing_by_oseni_salami.html">Photo Editing</a></li>
+                        <li><a href="video_editing_by_oseni_salami.html">Photo Editing</a></li>
+                        <li><a href="animation_by_oseni_salami.html">Animation</a></li>
+                        <li><a href="advertising_by_oseni_salami.html">Advertising</a></li>
+                    </ul>
+                </div>
+           </div>
+    
+    
+            <div class="foot-contact-link">
+                <div class="info-box2">
+                    <div class="email-info">
+                        <h5>TEL :</h5>
+                        <span><a href="tel:+2348137577454">+234 813 757 7454</a></span>
+                    </div>
+
+                    <div class="email-info">
+                        <h5>EMAIL :</h5>
+                        <span><a href="mailto:alexoseni.as@gmail.com">alexoseni.as@gmail.com</a></span>
+                    </div>
+
+                    <div class="behance-info">
+                        <h5>BEHANCE :</h5>
+                        <span><a href="https://www.behance.net/alexsalami">behance.net/alexsalami</a></span>
+                    </div>
+                </div>
+    
+                <div class="social-icons2">
+                    <a href="https://www.facebook.com/alexo.salami" target="_blank" id="si"><i class='bx bxl-facebook'></i></a>
+        
+                    <a href="https://www.instagram.com/alex_oseni" target="_blank" id="si"><i class='bx bxl-instagram'></i></a>
+        
+                    <a href="https://www.twitter.com/@Alexoseni" target="_blank" id="si"><i class='bx bxl-twitter'></i></a>
+                    
+                    <a href="#" target="_blank" id="si"><i class='bx bxl-dribbble'></i></a>
+                </div>
+            </div>
+    
+    
+            <a href="#home" class="back-to-top scroll-scale"><i class="fa-solid fa-angles-up fa-bounce"></i></a>
+        </div>
+
+
+        <div id="footer2">
+            <p class="copyright scroll-scale">Copyright &copy; 2024 by AlexO-S || All Right Reserved.</p>
+        </div>
+    </footer>
+    <!--  ----------------------------->
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="mixitup.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website">
+    <title>Oseni Salami - CV</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            scroll-behavior: smooth;
+            text-decoration: none;
+        }
+
+        :root {
+            --text-color: #f5f5f5;
+            --hover-color: #12f7ff;
+            --bg-color: #11182a;
+            --second-bg-color: #292e33;
+            --big-font: 2.5rem;
+            --normal-font: 2rem;
+            --neon-box-shadow: 0 0 .5rem #12f7ff;
+            --h2-font: 3rem;
+            --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3), 
+            0 0 20px rgba(18, 247, 255, 0.3), 
+            0 0 30px rgba(18, 247, 255, 0.3),
+            0 0 40px rgba(18, 247, 255, 0.3),
+            0 0 70px rgba(18, 247, 255, 0.3),
+            0 0 80px rgba(18, 247, 255, 0.3),
+            0 0 100px rgba(18, 247, 255, 0.3),
+            0 0 150px rgba(18, 247, 255, 0.3),
+        }
+
+        ::-webkit-scrollbar {
+            height: 0;
+            width: .5rem;
+            display: none;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--second-bg-color);
+            display: none;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--hover-color);
+            border-radius: 5rem;
+            display: none;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        #nav {
+            padding-bottom: 50px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        span {
+            color: var(--hover-color);
+        }
+        
+        .nav-bar {
+            background: var(--bg-color);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 15px 8%;
+            position: fixed;
+            width: 100%;
+        }
+        
+        .nav-bar button {
+            color: var(--bg-color);
+            background: var(--text-color);
+            font-size: 1rem;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 50px;
+            box-shadow: var(--hover-color) 0px 1px 20px;
+            font-weight: 600;
+        }
+        
+        .nav-bar button:hover {
+            background: var(--hover-color);
+            color: var(--second-bg-color);
+            box-shadow: var(--hover-color) 0px 1px 20px 5px;
+        }
+
+        .container {
+            /* padding: 0px; */
+            width: 100;
+        }    
+
+
+        /* <!-- MEDIA QUERY ----------------------> */
+        /* @media(max-width:991px) {
+            iframe {
+                height: 660px; 
+            } 
+        }
+
+
+        @media(max-width:768px) {
+            iframe {
+                height: 660px; 
+            } 
+        }
+
+
+        @media(max-width:545px) {
+            iframe {
+                height: 660px; 
+            } 
+        } */
+
+
+        @media(max-width:490px) {
+            #nav {
+                font-size: 85%;
+            } 
+        
+            .logo {
+                font-size: 20px;
+                font-weight: 650;
+                letter-spacing: 1px;
+            }
+            
+            span {
+                color: var(--hover-color);
+            }
+            
+            .nav-bar {
+                background: var(--bg-color);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 10px 8%;
+                position: fixed;
+                width: 100%;
+            }
+            
+            .nav-bar button {
+                color: var(--bg-color);
+                background: var(--text-color);
+                font-size: 0.8rem;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 50px;
+                box-shadow: var(--hover-color) 0px 1px 12px;
+                font-weight: 600;
+            }
+
+            iframe {
+                height: 695px; 
+            } 
+        }
+
+        
+        @media(max-width:455px) {
+            .logo {
+                font-size: 18px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.6rem;
+            }
+
+            /* iframe {
+                height: 660px; 
+            }  */
+        }
+
+
+
+        @media(max-width:445px) {
+            .logo {
+                font-size: 17px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.56rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+
+
+        @media(max-width:432px) {
+            .logo {
+                font-size: 16.6px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.56rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+
+        @media(max-width:420px) {
+            .logo {
+                font-size: 16.5px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.55rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+
+
+        @media(max-width:402px) {
+            .logo {
+                font-size: 16px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.5rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+
+
+        @media(max-width:390px) {
+            .logo {
+                font-size: 15.9px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.49rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+
+
+        @media(max-width:384px) {
+            .logo {
+                font-size: 15.8px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.48rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+
+
+        @media(max-width:376px) {
+            .logo {
+                font-size: 15.5px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.45rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+
+
+        @media(max-width:360px) {
+            .logo {
+                font-size: 15px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.4rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+
+
+        @media(max-width:356px) {
+            .logo {
+                font-size: 15px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.4rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+
+
+        @media(max-width:320px) {
+            .logo {
+                font-size: 15px;
+            }
+                        
+            .nav-bar button {
+                font-size: 0.4rem;
+            }
+
+            iframe {
+                height: 620px; 
+            } 
+        }
+
+
+        @media(max-height:1000px) {
+            iframe {
+                height: 660px; 
+            } 
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="nav">
+        <div class="nav-bar">
+            <div class="logo"><span>O</span>seni.</div>
+
+            <a href="index.html"><button><i class="fa-solid fa-angles-left" style="color: var(--bg-color);"></i>  GO BACK</button></a>
+
+            <a href="mailto:alexoseni.as@gmail.com"><button>Contact Me!</button></a>
+        </div>
+    </section>
+
+    <div class="container">
+        <iframe src="https://drive.google.com/file/d/1Ax2On2XozBv4DQ2HuakV-HN7mfJY_ehe/preview" frameborder="0" width="100%" height="600px"></iframe>
+    </div>
+
+    
+
+    <script>
+        // JS FOR WHATSAPP CHAT////////////////////////////
+        (function () {
+        var options = {
+            whatsapp: "2348137577454", //Whatsapp Number
+            call_to_action: "Message me", //Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function (){WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+</body>
+</html>
