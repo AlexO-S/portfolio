@@ -7,7 +7,20 @@
     <title>Oseni Salami - CV</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+   
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "9nuddLGLz2euIRwQENGy5",
+        domain: "www.chatbase.co"
+        }
+    </script>
+    <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="9nuddLGLz2euIRwQENGy5"
+        domain="www.chatbase.co"
+        defer>
+    </script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -382,18 +395,36 @@
     
 
     <script>
-        // JS FOR WHATSAPP CHAT////////////////////////////
-        (function () {
-        var options = {
-            whatsapp: "2348137577454", //Whatsapp Number
-            call_to_action: "Message me", //Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function (){WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-        })();
+        // JS FOR LIFE CHAT////////////////////////////
+
+        // <!-- Start of Async Drift Code -->
+        
+        "use strict";
+        
+        !function() {
+          var t = window.driftt = window.drift = window.driftt || [];
+          if (!t.init) {
+            if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+            t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+            t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }, t.methods.forEach(function(e) {
+              t[e] = t.factory(e);
+            }), t.load = function(t) {
+              var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+              o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            };
+          }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('fpbdewrzxxti');
+        
+        // <!-- End of Async Drift Code -->
     </script>
 </body>
 </html>
