@@ -110,6 +110,312 @@ span {
 }
 
 
+#toggle-button { 
+    display: flex; 
+    position: fixed; 
+    top: 200px; 
+    right: 2%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+    border: none;
+    z-index: 99999;
+}
+
+#toggle-button:hover {
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+
+#dreamsky-all {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: 1100px;
+}
+
+#dreamsky4 {
+    display: flex;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: -1300px;
+    opacity: 0.18;
+}
+
+#dreamsky3 {
+    display: flex;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: -1240px;
+    opacity: 0.2; 
+}
+
+#dreamsky1 {
+    display: flex;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: -1175px;
+}
+
+#dreamsky2 {
+    display: flex;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: -1100px;
+    opacity: 0.2;
+}
+
+button#space-btn {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+    border: 0;
+    outline: 0;
+    border-radius: 11px;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .btn-container1 {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 150px;
+    z-index: -9999;
+  }
+
+  .btn-container2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 160px;
+    left: 260px;
+    z-index: -9999;
+  }
+
+  .btn-container3 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 160px;
+    left: 535px;
+    z-index: -9999;
+  }
+
+  .btn-container4 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 160px;
+    left: 800px;
+    z-index: -9999;
+  }
+
+  .btn-container5 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 155px;
+    left: 1050px;
+    z-index: -9999;
+  }
+
+  .btn-container6 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 1310px;
+    z-index: -9999;
+  }
+
+  .btn-container7 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 1550px;
+    z-index: -9999;
+  }
+
+  .btn-container8 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 1790px;
+    z-index: -9999;
+  }
+
+  .btn-container9 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 2000px;
+    z-index: -9999;
+  }
+
+  .btn-container10 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 2250px;
+    z-index: -9999;
+  }
+  
+  .btn-container::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 0;
+  }
+      
+  #space-btn div.star {
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    border-radius: 50%;
+    animation: blink 2s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  #space-btn div.shooting-star {
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    background: linear-gradient(80deg, #ffffffff, #ffffff00);
+    border-radius: 50%;
+    transform: rotate(-40deg);
+    opacity: 0
+  }
+  
+  #space-btn div.shooting-star-1 {
+    animation: fallingStar1 4s 6s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  #space-btn div.shooting-star-2 {
+    animation: fallingStar2 2s 10s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  #space-btn div.shooting-star-3 {
+    animation: fallingStar3 8s 20s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  #space-btn div.shooting-star-4 {
+    animation: fallingStar4 4s 6s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      box-shadow: 0 0 10px 0 white;
+    }
+  
+    50% {
+      box-shadow: 0 0 10px 2px white;
+    }
+  
+    100% {
+      box-shadow: 0 0 10px 0 white;
+    }
+  }
+  
+  @keyframes fallingStar1 {
+    0% {
+      top: -10px;
+      left: 220px;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 200px;
+      left: -20px;
+      opacity: .2;
+    }
+  }
+  
+  @keyframes fallingStar2 {
+    0% {
+      top: -10px;
+      left: 150px;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 200px;
+      left: -90px;
+      opacity: .2;
+    }
+  }
+  
+  @keyframes fallingStar3 {
+    0% {
+      top: -10px;
+      left: 80px;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 200px;
+      left: -160px;
+      opacity: .2;
+    }
+  }
+  
+  @keyframes fallingStar4 {
+    0% {
+      top: -10px;
+      left: 0px;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 200px;
+      left: -240px;
+      opacity: .2;
+    }
+  }
+
+
 
 
 /* CONTACT SECTION------------------------------------------- */
@@ -543,6 +849,10 @@ footer a .fa-angles-up {
         border-radius: 50px;
         box-shadow: var(--hover-color) 0px 1px 12px;
         font-weight: 600;
+    }
+
+    #dreamsky-all {
+        margin-top: 1080px;
     }
 
     .fillter-buttons .button {
