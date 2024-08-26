@@ -1,3 +1,56 @@
+// JS FOR BACKGROUND MUSIC////////////////////////////
+// Array of music file URLs
+const musicFiles = [
+    'sounds/music2.mp3',
+    'sounds/music4.mp3',
+    'sounds/music1.mp3',
+    'sounds/music3.mp3'
+];
+
+// Function to pick a random music file
+function getRandomMusicFile() {
+    const randomIndex = Math.floor(Math.random() * musicFiles.length);
+    return musicFiles[randomIndex];
+}
+
+// Set the audio source to a random music file
+const audioElement = document.getElementById('background-music');
+audioElement.src = getRandomMusicFile();
+
+// Automatically play music once the page has fully loaded
+window.onload = function() {
+    audioElement.play().catch(error => {
+        console.error("Error trying to play the audio: ", error);
+    });
+};
+
+// To change the music after it ends
+audioElement.addEventListener('ended', function() {
+    audioElement.src = getRandomMusicFile();
+    audioElement.play().catch(error => {
+        console.error("Error trying to play the next audio: ", error);
+    });
+});
+
+// Toggle play and pause functionality
+const toggleButton = document.getElementById('toggle-button');
+
+toggleButton.addEventListener('click', function() {
+    if (audioElement.paused) {
+        audioElement.play().then(() => {
+            toggleButton.textContent = 'Pause Sound'; // Change button text to "Pause"
+        }).catch(error => {
+            console.error("Error trying to play the audio: ", error);
+        });
+    } else {
+        audioElement.pause();
+        toggleButton.textContent = 'Play Sound'; // Change button text to "Play"
+    }
+});
+
+
+
+
 // JS FOR FORM SUBMISSION TO EMAIL////////////////////////////
 const form = document.querySelector(".form-and-contactinfo form");
 const fullName = document.getElementById("name");
