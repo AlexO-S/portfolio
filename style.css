@@ -129,6 +129,7 @@ section  {
 
 /* HOME SECTION--------------------------------------------- */
 .home {
+    position: relative;
     margin-top: -50px;
     padding-top: 125px;
     min-height: 100vh;
@@ -138,6 +139,7 @@ section  {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     grid-gap: 4em;
+    overflow: hidden;
 }
 
 .home-content {
@@ -350,6 +352,313 @@ a.btn:nth-child(2)::before {
 .liquid-shape:nth-child(2) {
     filter: blur(50px);
 }
+
+
+#toggle-button { 
+    display: flex; 
+    position: fixed; 
+    top: 200px; 
+    right: 2%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+    border: none;
+    z-index: 99999;
+}
+
+#toggle-button:hover {
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+
+#dreamsky-all {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: 1350px;
+}
+
+#dreamsky4 {
+    display: flex;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: -1300px;
+    opacity: 0.18;
+}
+
+#dreamsky3 {
+    display: flex;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: -1240px;
+    opacity: 0.2; 
+}
+
+#dreamsky1 {
+    display: flex;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: -1175px;
+}
+
+#dreamsky2 {
+    display: flex;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    justify-content: left;
+    margin-top: -1100px;
+    opacity: 0.2;
+}
+
+button#space-btn {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+    border: 0;
+    outline: 0;
+    border-radius: 11px;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .btn-container1 {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 150px;
+    z-index: -9999;
+  }
+
+  .btn-container2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 160px;
+    left: 260px;
+    z-index: -9999;
+  }
+
+  .btn-container3 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 160px;
+    left: 535px;
+    z-index: -9999;
+  }
+
+  .btn-container4 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 160px;
+    left: 800px;
+    z-index: -9999;
+  }
+
+  .btn-container5 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 155px;
+    left: 1050px;
+    z-index: -9999;
+  }
+
+  .btn-container6 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 1310px;
+    z-index: -9999;
+  }
+
+  .btn-container7 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 1550px;
+    z-index: -9999;
+  }
+
+  .btn-container8 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 1790px;
+    z-index: -9999;
+  }
+
+  .btn-container9 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 2000px;
+    z-index: -9999;
+  }
+
+  .btn-container10 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: visible;
+    margin-top: 140px;
+    left: 2250px;
+    z-index: -9999;
+  }
+  
+  .btn-container::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 0;
+  }
+      
+  #space-btn div.star {
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    border-radius: 50%;
+    animation: blink 2s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  #space-btn div.shooting-star {
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    background: linear-gradient(80deg, #ffffffff, #ffffff00);
+    border-radius: 50%;
+    transform: rotate(-40deg);
+    opacity: 0
+  }
+  
+  #space-btn div.shooting-star-1 {
+    animation: fallingStar1 4s 6s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  #space-btn div.shooting-star-2 {
+    animation: fallingStar2 2s 10s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  #space-btn div.shooting-star-3 {
+    animation: fallingStar3 8s 20s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  #space-btn div.shooting-star-4 {
+    animation: fallingStar4 4s 6s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      box-shadow: 0 0 10px 0 white;
+    }
+  
+    50% {
+      box-shadow: 0 0 10px 2px white;
+    }
+  
+    100% {
+      box-shadow: 0 0 10px 0 white;
+    }
+  }
+  
+  @keyframes fallingStar1 {
+    0% {
+      top: -10px;
+      left: 220px;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 200px;
+      left: -20px;
+      opacity: .2;
+    }
+  }
+  
+  @keyframes fallingStar2 {
+    0% {
+      top: -10px;
+      left: 150px;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 200px;
+      left: -90px;
+      opacity: .2;
+    }
+  }
+  
+  @keyframes fallingStar3 {
+    0% {
+      top: -10px;
+      left: 80px;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 200px;
+      left: -160px;
+      opacity: .2;
+    }
+  }
+  
+  @keyframes fallingStar4 {
+    0% {
+      top: -10px;
+      left: 0px;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 200px;
+      left: -240px;
+      opacity: .2;
+    }
+  }
+
 
 
 
@@ -1166,6 +1475,10 @@ footer a .fa-angles-up {
         filter: blur(50px);
     }
 
+    #dreamsky-all {
+        margin-top: 1250px;
+    }
+
     #about {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -1289,6 +1602,10 @@ footer a .fa-angles-up {
     
     .liquid-shape:nth-child(2) {
         filter: blur(50px);
+    }
+
+    #dreamsky-all {
+        margin-top: 765px;
     }
 
     #about {
@@ -1442,6 +1759,10 @@ footer a .fa-angles-up {
         filter: blur(50px);
     }
 
+    #dreamsky-all {
+        margin-top: 940px;
+    }
+
     .fillter-buttons .button {
         font-size: .8rem;
     }
@@ -1531,6 +1852,10 @@ footer a .fa-angles-up {
 
     .liquid-shape:nth-child(2) {
         filter: blur(50px);
+    }
+
+    #dreamsky-all {
+        margin-top: 940px;
     }
 
     .about .img-about img {
@@ -1742,6 +2067,10 @@ footer a .fa-angles-up {
         filter: blur(50px);
     }
 
+    #dreamsky-all {
+        margin-top: 985px;
+    }
+
     .info-box {
         width: 185px;
         margin: 1rem 0 2rem;
@@ -1891,6 +2220,10 @@ footer a .fa-angles-up {
         filter: blur(50px);
     }
 
+    #dreamsky-all {
+        margin-top: 1045px;
+    }
+
     .about .img-about img {
         max-width: 350px; 
     }
@@ -2033,6 +2366,10 @@ footer a .fa-angles-up {
         filter: blur(50px);
     }
 
+    #dreamsky-all {
+        margin-top: 1085px;
+    }
+
     .fillter-buttons .button {
         font-size: .8rem;
     }
@@ -2142,6 +2479,10 @@ footer a .fa-angles-up {
         filter: blur(50px);
     }  
 
+    #dreamsky-all {
+        margin-top: 1100px;
+    }
+
     footer p {
         font-size: .8rem;
     }
@@ -2202,6 +2543,10 @@ footer a .fa-angles-up {
 
     .liquid-shape:nth-child(2) {
         filter: blur(50px);
+    }
+
+    #dreamsky-all {
+        margin-top: 1125px;
     }
 
     .info-about1 {
@@ -2265,6 +2610,10 @@ footer a .fa-angles-up {
 
     .liquid-shape:nth-child(2) {
         filter: blur(50px);
+    }
+
+    #dreamsky-all {
+        margin-top: 1130px;
     }
 
     .info-about3 {
@@ -2406,6 +2755,10 @@ footer a .fa-angles-up {
         filter: blur(50px);
     }
 
+    #dreamsky-all {
+        margin-top: 1145px;
+    }
+
     .info-about3 {
         left: 70%;
         top: 70%; 
@@ -2510,6 +2863,10 @@ footer a .fa-angles-up {
         left: -12px;
     }
 
+    #dreamsky-all {
+        margin-top: 1165px;
+    }
+
     .liquid-shape:nth-child(2) {
         filter: blur(50px);
     }
@@ -2585,6 +2942,10 @@ footer a .fa-angles-up {
 
     .liquid-shape:nth-child(2) {
         filter: blur(50px);
+    }
+
+    #dreamsky-all {
+        margin-top: 1198px;
     }
 
     .info-about1 {
@@ -2672,6 +3033,10 @@ footer a .fa-angles-up {
         filter: blur(50px);
     }
 
+    #dreamsky-all {
+        margin-top: 1205px;
+    }
+
     .info-box {
         width: 200px;
         margin: 1rem 0 2rem;
@@ -2742,6 +3107,10 @@ footer a .fa-angles-up {
 
     .liquid-shape:nth-child(2) {
         filter: blur(50px);
+    }
+
+    #dreamsky-all {
+        margin-top: 1290px;
     }
 
     .info-about1,
